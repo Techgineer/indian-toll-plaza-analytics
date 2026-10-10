@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="100%" height="100%" style="background:#ffffff; font-family:'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <filter id="barShadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+    <linearGradient id="adtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1f4e79"/>
+      <stop offset="100%" stop-color="#0f2c59"/>
+    </linearGradient>
+    <linearGradient id="pcuGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d9534f"/>
+      <stop offset="100%" stop-color="#b52b27"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Title & Subtitle -->
+  <text x="500" y="38" text-anchor="middle" font-size="20" font-weight="bold" fill="#0f2c59">
+    Figure 1: Daily Traffic Volume (ADT) and Equivalent PCU Across Study Toll Plazas
+  </text>
+  <text x="500" y="62" text-anchor="middle" font-size="13" fill="#64748b">
+    Facility-Level Comparison Grouped by State (Karnataka, Andhra Pradesh, Telangana, Madhya Pradesh)
+  </text>
+
+  <!-- Legend -->
+  <g transform="translate(680, 85)">
+    <rect x="0" y="0" width="18" height="18" rx="3" fill="url(#adtGrad)"/>
+    <text x="26" y="14" font-size="12" font-weight="bold" fill="#1e293b">ADT (veh/day)</text>
+    <rect x="140" y="0" width="18" height="18" rx="3" fill="url(#pcuGrad)"/>
+    <text x="166" y="14" font-size="12" font-weight="bold" fill="#1e293b">PCU (PCU/day)</text>
+  </g>
+
+  <!-- Chart Area: x: 100 to 950, y: 120 to 480 (height = 360). Max value = 45,000. Scale = 360 / 45000 = 0.008 px/unit -->
+  <!-- Horizontal Gridlines & Y-Axis Labels -->
+  <!-- 0 -->
+  <line x1="90" y1="480" x2="960" y2="480" stroke="#cbd5e1" stroke-width="1.5"/>
+  <text x="80" y="485" text-anchor="end" font-size="11" fill="#64748b">0</text>
+
+  <!-- 10,000 (y = 480 - 80 = 400) -->
+  <line x1="90" y1="400" x2="960" y2="400" stroke="#f1f5f9" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text x="80" y="404" text-anchor="end" font-size="11" fill="#64748b">10,000</text>
+
+  <!-- 20,000 (y = 480 - 160 = 320) -->
+  <line x1="90" y1="320" x2="960" y2="320" stroke="#f1f5f9" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text x="80" y="324" text-anchor="end" font-size="11" fill="#64748b">20,000</text>
+
+  <!-- 30,000 (y = 480 - 240 = 240) -->
+  <line x1="90" y1="240" x2="960" y2="240" stroke="#f1f5f9" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text x="80" y="244" text-anchor="end" font-size="11" fill="#64748b">30,000</text>
+
+  <!-- 40,000 (y = 480 - 320 = 160) -->
+  <line x1="90" y1="160" x2="960" y2="160" stroke="#f1f5f9" stroke-width="1.2" stroke-dasharray="4,4"/>
+  <text x="80" y="164" text-anchor="end" font-size="11" fill="#64748b">40,000</text>
+
+  <!-- Y-Axis Title -->
+  <text x="-300" y="30" transform="rotate(-90)" text-anchor="middle" font-size="13" font-weight="bold" fill="#334155">
+    Volume (Vehicles / PCU per Day)
+  </text>
+
+  <!-- Groups by State Background Shading -->
+  <!-- Karnataka (TP-01, TP-02): x = 100 to 290 -->
+  <rect x="100" y="115" width="190" height="365" fill="#f8fafc" rx="4"/>
+  <text x="195" y="135" text-anchor="middle" font-size="12" font-weight="bold" fill="#0284c7">KARNATAKA</text>
+
+  <!-- Andhra Pradesh (TP-03, TP-04, TP-07): x = 300 to 590 -->
+  <rect x="300" y="115" width="290" height="365" fill="#fefce8" rx="4"/>
+  <text x="445" y="135" text-anchor="middle" font-size="12" font-weight="bold" fill="#d97706">ANDHRA PRADESH</text>
+
+  <!-- Telangana (TP-05, TP-06): x = 600 to 790 -->
+  <rect x="600" y="115" width="190" height="365" fill="#f0fdf4" rx="4"/>
+  <text x="695" y="135" text-anchor="middle" font-size="12" font-weight="bold" fill="#16a34a">TELANGANA</text>
+
+  <!-- Madhya Pradesh (TP-08): x = 800 to 950 -->
+  <rect x="800" y="115" width="150" height="365" fill="#faf5ff" rx="4"/>
+  <text x="875" y="135" text-anchor="middle" font-size="12" font-weight="bold" fill="#9333ea">MADHYA PRADESH</text>
+
+  <!-- Bars Data:
+       Formula: height = val * 0.008, y = 480 - height
+       Bar width = 36px, gap = 6px between pair, cluster center
+  -->
+
+  <!-- TP-01: ADT=2058 (h=16.5, y=463.5), PCU=2126 (h=17.0, y=463.0) -->
+  <g transform="translate(120, 0)">
+    <rect x="0" y="463.5" width="34" height="16.5" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="457" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">2,058</text>
+    <rect x="38" y="463.0" width="34" height="17.0" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="457" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">2,126</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-01</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">NH-75 (32k)</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#0284c7">HV: 9.5%</text>
+  </g>
+
+  <!-- TP-02: ADT=4214 (h=33.7, y=446.3), PCU=3745 (h=30.0, y=450.0) -->
+  <g transform="translate(205, 0)">
+    <rect x="0" y="446.3" width="34" height="33.7" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="440" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">4,214</text>
+    <rect x="38" y="450.0" width="34" height="30.0" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="444" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">3,745</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-02</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">NH-75 (101k)</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#0284c7">HV: 7.1%</text>
+  </g>
+
+  <!-- TP-03: ADT=6241 (h=49.9, y=430.1), PCU=5475 (h=43.8, y=436.2) -->
+  <g transform="translate(315, 0)">
+    <rect x="0" y="430.1" width="34" height="49.9" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="424" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">6,241</text>
+    <rect x="38" y="436.2" width="34" height="43.8" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="430" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">5,475</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-03</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">Ranasthalam</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#d97706">HV: 7.6%</text>
+  </g>
+
+  <!-- TP-04: ADT=6732 (h=53.9, y=426.1), PCU=7532 (h=60.3, y=419.7) -->
+  <g transform="translate(405, 0)">
+    <rect x="0" y="426.1" width="34" height="53.9" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="420" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">6,732</text>
+    <rect x="38" y="419.7" width="34" height="60.3" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="413" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">7,532</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-04</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">Chintalapalem</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#d97706">HV: 14.3%</text>
+  </g>
+
+  <!-- TP-07: ADT=23892 (h=191.1, y=288.9), PCU=29864 (h=238.9, y=241.1) -->
+  <g transform="translate(495, 0)">
+    <rect x="0" y="288.9" width="34" height="191.1" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="282" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">23,892</text>
+    <rect x="38" y="241.1" width="34" height="238.9" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="234" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">29,864</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-07</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">Rapur</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#d97706">HV: 17.7%</text>
+  </g>
+
+  <!-- TP-05: ADT=13248 (h=106.0, y=374.0), PCU=24611 (h=196.9, y=283.1) -->
+  <g transform="translate(615, 0)">
+    <rect x="0" y="374.0" width="34" height="106.0" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="367" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">13,248</text>
+    <rect x="38" y="283.1" width="34" height="196.9" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="276" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">24,611</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-05</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">Chintapally</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#16a34a">HV: 40.7%</text>
+  </g>
+
+  <!-- TP-06: ADT=21986 (h=175.9, y=304.1), PCU=37133 (h=297.1, y=182.9) -->
+  <g transform="translate(705, 0)">
+    <rect x="0" y="304.1" width="34" height="175.9" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="297" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">21,986</text>
+    <rect x="38" y="182.9" width="34" height="297.1" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="176" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">37,133</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-06</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">Muthojipet</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#16a34a">HV: 33.0%</text>
+  </g>
+
+  <!-- TP-08: ADT=36312 (h=290.5, y=189.5), PCU=40307 (h=322.5, y=157.5) -->
+  <g transform="translate(835, 0)">
+    <rect x="0" y="189.5" width="34" height="290.5" rx="2" fill="url(#adtGrad)" filter="url(#barShadow)"/>
+    <text x="17" y="183" text-anchor="middle" font-size="9" font-weight="bold" fill="#1f4e79">36,312</text>
+    <rect x="38" y="157.5" width="34" height="322.5" rx="2" fill="url(#pcuGrad)" filter="url(#barShadow)"/>
+    <text x="55" y="151" text-anchor="middle" font-size="9" font-weight="bold" fill="#b52b27">40,307</text>
+    <text x="36" y="500" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e293b">TP-08</text>
+    <text x="36" y="515" text-anchor="middle" font-size="9.5" fill="#64748b">Seoni (NH-44)</text>
+    <text x="36" y="528" text-anchor="middle" font-size="8.5" fill="#9333ea">HV: 14.0%</text>
+  </g>
+
+  <!-- Explanatory Footnote -->
+  <text x="500" y="575" text-anchor="middle" font-size="11" font-style="italic" fill="#64748b">
+    Note: Corridors with high heavy freight proportion (e.g. TP-05 at 40.7% and TP-06 at 33.0%) exhibit marked amplification of PCU relative to ADT due to Indo-HCM equivalency factors.
+  </text>
+</svg>

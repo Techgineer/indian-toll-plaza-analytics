@@ -1,0 +1,312 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1150 900" width="100%" height="100%" style="background:#f8fafc; font-family:'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <linearGradient id="mapHeader" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2c59"/>
+      <stop offset="100%" stop-color="#1f4e79"/>
+    </linearGradient>
+    <filter id="shadow" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#e11d48" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Banner -->
+  <rect x="25" y="20" width="1100" height="60" rx="8" fill="url(#mapHeader)" filter="url(#shadow)"/>
+  <text x="575" y="45" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" letter-spacing="0.5">
+    GEOGRAPHICAL DISTRIBUTION OF 8 STUDY TOLL PLAZAS ACROSS INDIAN NATIONAL HIGHWAYS
+  </text>
+  <text x="575" y="65" text-anchor="middle" fill="#cbd5e1" font-size="12">
+    Empirical Field Study Corridors: NH-44 (North-South), NH-16 (East Coast), NH-65 (Interstate), NH-75 (Peninsular Trunk)
+  </text>
+
+  <!-- Main Map Container -->
+  <rect x="25" y="95" width="670" height="780" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- India Stylized Vector Geography -->
+  <!-- Landmass silhouette -->
+  <path d="M 330 130 
+           L 360 170 L 400 180 L 430 220 L 450 250 L 510 260 L 550 250 L 580 270 
+           L 570 300 L 520 320 L 500 360 L 520 400 L 540 440 L 520 490 L 480 540 
+           L 440 600 L 400 660 L 370 730 L 350 780 L 340 820 L 330 780 L 300 720 
+           L 270 660 L 250 600 L 230 530 L 210 470 L 170 440 L 140 400 L 120 360 
+           L 150 330 L 190 320 L 230 280 L 260 220 L 290 170 Z" 
+        fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+
+  <!-- Neighboring Water Bodies Text -->
+  <text x="140" y="620" fill="#94a3b8" font-size="13" font-style="italic" font-weight="600" letter-spacing="2">ARABIAN SEA</text>
+  <text x="490" y="620" fill="#94a3b8" font-size="13" font-style="italic" font-weight="600" letter-spacing="2">BAY OF BENGAL</text>
+  <text x="310" y="850" fill="#94a3b8" font-size="12" font-style="italic" font-weight="600" letter-spacing="2">INDIAN OCEAN</text>
+
+  <!-- States boundaries (schematic guides) -->
+  <!-- Madhya Pradesh -->
+  <path d="M 280 340 L 440 330 L 460 410 L 390 440 L 290 420 Z" fill="#e2e8f0" fill-opacity="0.6" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="360" y="375" fill="#64748b" font-size="11" font-weight="bold" letter-spacing="1">MADHYA PRADESH</text>
+
+  <!-- Maharashtra -->
+  <path d="M 230 430 L 390 440 L 370 510 L 240 510 Z" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="3,3"/>
+  <text x="270" y="475" fill="#94a3b8" font-size="11" font-weight="bold" letter-spacing="1">MAHARASHTRA</text>
+
+  <!-- Telangana -->
+  <path d="M 330 480 L 420 480 L 410 540 L 340 550 Z" fill="#e0f2fe" fill-opacity="0.7" stroke="#93c5fd" stroke-width="1.2"/>
+  <text x="350" y="515" fill="#0284c7" font-size="11" font-weight="bold" letter-spacing="1">TELANGANA</text>
+
+  <!-- Andhra Pradesh -->
+  <path d="M 420 480 L 510 440 L 460 570 L 390 630 L 370 580 L 410 540 Z" fill="#fef3c7" fill-opacity="0.6" stroke="#fcd34d" stroke-width="1.2"/>
+  <text x="430" y="555" fill="#d97706" font-size="11" font-weight="bold" letter-spacing="1">ANDHRA PRADESH</text>
+
+  <!-- Karnataka -->
+  <path d="M 260 520 L 350 530 L 370 650 L 310 680 L 280 610 Z" fill="#dcfce7" fill-opacity="0.6" stroke="#86efac" stroke-width="1.2"/>
+  <text x="290" y="605" fill="#16a34a" font-size="11" font-weight="bold" letter-spacing="1">KARNATAKA</text>
+
+  <!-- Major Highway Traces -->
+  <!-- NH-44 (North to South through Seoni MP -> Telangana -> Bangalore) -->
+  <path d="M 340 180 L 350 250 L 360 330 L 365 390 L 355 490 L 345 560 L 335 660 L 340 760 L 340 820" 
+        fill="none" stroke="#dc2626" stroke-width="3" stroke-linecap="round"/>
+  <text x="345" y="270" fill="#dc2626" font-size="9" font-weight="bold" transform="rotate(80 345 270)">NH-44 (NS Corridor)</text>
+
+  <!-- NH-16 (East Coast Spine Kolkata to Chennai via Ranasthalam) -->
+  <path d="M 520 330 L 490 390 L 475 450 L 440 540 L 400 620 L 375 690" 
+        fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <text x="480" y="415" fill="#2563eb" font-size="9" font-weight="bold" transform="rotate(-65 480 415)">NH-16 (Golden Quad)</text>
+
+  <!-- NH-65 (Hyderabad to Vijayawada via Chintapally) -->
+  <path d="M 320 500 L 370 515 L 430 535" 
+        fill="none" stroke="#059669" stroke-width="3" stroke-linecap="round"/>
+  <text x="380" y="510" fill="#059669" font-size="9" font-weight="bold">NH-65</text>
+
+  <!-- NH-75 (Karnataka Peninsular Bantwal-Bangalore via Hassan/Kunigal) -->
+  <path d="M 270 625 L 315 635 L 360 645" 
+        fill="none" stroke="#7c3aed" stroke-width="3" stroke-linecap="round"/>
+  <text x="275" y="645" fill="#7c3aed" font-size="9" font-weight="bold">NH-75</text>
+
+  <!-- Toll Plaza Pins & Labels on Map -->
+  <!-- TP-08: Seoni (MP) -->
+  <circle cx="365" cy="390" r="7" fill="#dc2626" filter="url(#glow)"/>
+  <circle cx="365" cy="390" r="3" fill="#ffffff"/>
+  <rect x="235" y="380" width="120" height="20" rx="4" fill="#1e293b"/>
+  <text x="295" y="394" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">TP-08: Seoni (MP)</text>
+  <line x1="355" y1="390" x2="365" y2="390" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-03: Ranasthalam (AP) -->
+  <circle cx="475" cy="460" r="7" fill="#2563eb" filter="url(#glow)"/>
+  <circle cx="475" cy="460" r="3" fill="#ffffff"/>
+  <rect x="495" y="450" width="150" height="20" rx="4" fill="#1e293b"/>
+  <text x="570" y="464" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">TP-03: Ranasthalam (AP)</text>
+  <line x1="475" y1="460" x2="495" y2="460" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-06: Muthojipet (TS) -->
+  <circle cx="365" cy="495" r="7" fill="#0284c7" filter="url(#glow)"/>
+  <circle cx="365" cy="495" r="3" fill="#ffffff"/>
+  <rect x="235" y="485" width="120" height="20" rx="4" fill="#1e293b"/>
+  <text x="295" y="499" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">TP-06: Muthojipet</text>
+  <line x1="355" y1="495" x2="365" y2="495" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-05: Chintapally (TS) -->
+  <circle cx="385" cy="520" r="7" fill="#059669" filter="url(#glow)"/>
+  <circle cx="385" cy="520" r="3" fill="#ffffff"/>
+  <rect x="405" y="510" width="130" height="20" rx="4" fill="#1e293b"/>
+  <text x="470" y="524" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">TP-05: Chintapally (TS)</text>
+  <line x1="385" y1="520" x2="405" y2="520" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-04: Chintalapalem (AP/TS) -->
+  <circle cx="410" cy="545" r="7" fill="#d97706" filter="url(#glow)"/>
+  <circle cx="410" cy="545" r="3" fill="#ffffff"/>
+  <rect x="430" y="535" width="145" height="20" rx="4" fill="#1e293b"/>
+  <text x="502" y="549" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">TP-04: Chintalapalem</text>
+  <line x1="410" y1="545" x2="430" y2="545" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-07: Rapur (AP) -->
+  <circle cx="400" cy="610" r="7" fill="#d97706" filter="url(#glow)"/>
+  <circle cx="400" cy="610" r="3" fill="#ffffff"/>
+  <rect x="420" y="600" width="120" height="20" rx="4" fill="#1e293b"/>
+  <text x="480" y="614" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="bold">TP-07: Rapur (AP)</text>
+  <line x1="400" y1="610" x2="420" y2="610" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-01: NH-75 Ch. 32+800 (KA) -->
+  <circle cx="310" cy="635" r="7" fill="#7c3aed" filter="url(#glow)"/>
+  <circle cx="310" cy="635" r="3" fill="#ffffff"/>
+  <rect x="175" y="625" width="125" height="20" rx="4" fill="#1e293b"/>
+  <text x="237" y="639" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="bold">TP-01: NH-75 (Ch.32)</text>
+  <line x1="300" y1="635" x2="310" y2="635" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- TP-02: NH-75 Ch. 101+300 (KA) -->
+  <circle cx="330" cy="645" r="7" fill="#7c3aed" filter="url(#glow)"/>
+  <circle cx="330" cy="645" r="3" fill="#ffffff"/>
+  <rect x="350" y="640" width="135" height="20" rx="4" fill="#1e293b"/>
+  <text x="417" y="654" text-anchor="middle" fill="#ffffff" font-size="9.5" font-weight="bold">TP-02: NH-75 (Ch.101)</text>
+  <line x1="330" y1="645" x2="350" y2="645" stroke="#1e293b" stroke-width="1.5"/>
+
+  <!-- Map Legend Box -->
+  <g transform="translate(45, 715)">
+    <rect x="0" y="0" width="200" height="145" rx="6" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="12" y="20" fill="#0f2c59" font-size="11" font-weight="bold">HIGHWAY CORRIDOR LEGEND</text>
+    <line x1="12" y1="36" x2="45" y2="36" stroke="#dc2626" stroke-width="3"/>
+    <text x="52" y="40" fill="#334155" font-size="10">NH-44 (North-South Trunk)</text>
+    <line x1="12" y1="56" x2="45" y2="56" stroke="#2563eb" stroke-width="3"/>
+    <text x="52" y="60" fill="#334155" font-size="10">NH-16 (East Coast Golden Q.)</text>
+    <line x1="12" y1="76" x2="45" y2="76" stroke="#059669" stroke-width="3"/>
+    <text x="52" y="80" fill="#334155" font-size="10">NH-65 (Interstate Highway)</text>
+    <line x1="12" y1="96" x2="45" y2="96" stroke="#7c3aed" stroke-width="3"/>
+    <text x="52" y="100" fill="#334155" font-size="10">NH-75 (Peninsular Trunk)</text>
+    <circle cx="28" cy="120" r="5" fill="#e11d48"/>
+    <text x="52" y="124" fill="#334155" font-size="10" font-weight="bold">Toll Plaza Location (N=8)</text>
+  </g>
+
+  <!-- Right Information & Insights Panel -->
+  <g transform="translate(710, 95)">
+    <rect x="0" y="0" width="415" height="780" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5" filter="url(#shadow)"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="415" height="38" rx="8" fill="#1e293b"/>
+    <rect x="0" y="28" width="415" height="10" fill="#1e293b"/>
+    <text x="16" y="24" fill="#ffffff" font-size="13" font-weight="bold">TOLL PLAZA OPERATIONAL METRICS SUMMARY</text>
+
+    <!-- Table Header -->
+    <rect x="10" y="50" width="395" height="26" fill="#f1f5f9"/>
+    <text x="20" y="67" fill="#475569" font-size="10" font-weight="bold">ID</text>
+    <text x="50" y="67" fill="#475569" font-size="10" font-weight="bold">Plaza &amp; State</text>
+    <text x="160" y="67" fill="#475569" font-size="10" font-weight="bold">ADT</text>
+    <text x="225" y="67" fill="#475569" font-size="10" font-weight="bold">PCU</text>
+    <text x="285" y="67" fill="#475569" font-size="10" font-weight="bold">K-Fac</text>
+    <text x="340" y="67" fill="#475569" font-size="10" font-weight="bold">HV%</text>
+
+    <!-- Row 1: TP-01 -->
+    <g transform="translate(10, 80)">
+      <rect x="0" y="0" width="395" height="32" fill="#ffffff"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP01</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">NH-75 (Ch.32)</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Karnataka | NH-75</text>
+      <text x="150" y="20" fill="#334155" font-size="10">2,058</text>
+      <text x="215" y="20" fill="#334155" font-size="10">2,126</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">7.29%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10">9.50%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 2: TP-02 -->
+    <g transform="translate(10, 114)">
+      <rect x="0" y="0" width="395" height="32" fill="#f8fafc"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP02</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">NH-75 (Ch.101)</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Karnataka | NH-75</text>
+      <text x="150" y="20" fill="#334155" font-size="10">4,214</text>
+      <text x="215" y="20" fill="#334155" font-size="10">3,745</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">8.68%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10">7.14%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 3: TP-03 -->
+    <g transform="translate(10, 148)">
+      <rect x="0" y="0" width="395" height="32" fill="#ffffff"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP03</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">Ranasthalam</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Andhra Pradesh | NH-16</text>
+      <text x="150" y="20" fill="#334155" font-size="10">6,241</text>
+      <text x="215" y="20" fill="#334155" font-size="10">5,475</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">8.06%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10">7.61%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 4: TP-04 -->
+    <g transform="translate(10, 182)">
+      <rect x="0" y="0" width="395" height="32" fill="#f8fafc"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP04</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">Chintalapalem</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">AP / Telangana | Arterial</text>
+      <text x="150" y="20" fill="#334155" font-size="10">6,732</text>
+      <text x="215" y="20" fill="#334155" font-size="10">7,532</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">6.70%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10">14.30%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 5: TP-05 -->
+    <g transform="translate(10, 216)">
+      <rect x="0" y="0" width="395" height="32" fill="#ffffff"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP05</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">Chintapally</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Telangana | NH-65</text>
+      <text x="150" y="20" fill="#334155" font-size="10">13,248</text>
+      <text x="215" y="20" fill="#334155" font-size="10">24,611</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">6.54%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10" font-weight="bold">40.73%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 6: TP-06 -->
+    <g transform="translate(10, 250)">
+      <rect x="0" y="0" width="395" height="32" fill="#f8fafc"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP06</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">Muthojipet</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Telangana | NH-163/44</text>
+      <text x="150" y="20" fill="#334155" font-size="10">21,986</text>
+      <text x="215" y="20" fill="#334155" font-size="10">37,133</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">6.54%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10" font-weight="bold">33.00%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 7: TP-07 -->
+    <g transform="translate(10, 284)">
+      <rect x="0" y="0" width="395" height="32" fill="#ffffff"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP07</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">Rapur</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Andhra Pradesh | Trunk</text>
+      <text x="150" y="20" fill="#334155" font-size="10">23,892</text>
+      <text x="215" y="20" fill="#334155" font-size="10">29,864</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">6.55%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10">17.68%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Row 8: TP-08 -->
+    <g transform="translate(10, 318)">
+      <rect x="0" y="0" width="395" height="32" fill="#f8fafc"/>
+      <text x="10" y="20" fill="#0f2c59" font-size="10.5" font-weight="bold">TP08</text>
+      <text x="40" y="15" fill="#1e293b" font-size="10" font-weight="bold">Seoni</text>
+      <text x="40" y="27" fill="#64748b" font-size="8.5">Madhya Pradesh | NH-44</text>
+      <text x="150" y="20" fill="#334155" font-size="10">36,312</text>
+      <text x="215" y="20" fill="#334155" font-size="10">40,307</text>
+      <text x="275" y="20" fill="#0f766e" font-size="10" font-weight="bold">6.60%</text>
+      <text x="330" y="20" fill="#b45309" font-size="10">13.98%</text>
+      <line x1="0" y1="32" x2="395" y2="32" stroke="#f1f5f9" stroke-width="1"/>
+    </g>
+
+    <!-- Key Insights Box 1 -->
+    <g transform="translate(10, 365)">
+      <rect x="0" y="0" width="395" height="120" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1.2"/>
+      <text x="12" y="20" fill="#1e40af" font-size="11" font-weight="bold">INSIGHT 1: Peak-Hour Factor (K) Attenuation Floor</text>
+      <text x="12" y="38" fill="#334155" font-size="9.5">• In lower-volume passenger corridors (TP02, TP03), K reaches</text>
+      <text x="20" y="52" fill="#1e40af" font-size="9.5" font-weight="bold">8.06% to 8.68% due to concentrated daily commuter demand.</text>
+      <text x="12" y="70" fill="#334155" font-size="9.5">• When ADT exceeds 13,000 veh/day and commercial freight rises,</text>
+      <text x="20" y="84" fill="#0f766e" font-size="9.5" font-weight="bold">K flattens into a tight asymptote: 6.54% to 6.60%.</text>
+      <text x="12" y="102" fill="#475569" font-size="9">Continuous 24-hr freight logistics spreads demand uniformly across all hours.</text>
+    </g>
+
+    <!-- Key Insights Box 2 -->
+    <g transform="translate(10, 495)">
+      <rect x="0" y="0" width="395" height="125" rx="6" fill="#f0fdf4" stroke="#bbf7d0" stroke-width="1.2"/>
+      <text x="12" y="20" fill="#166534" font-size="11" font-weight="bold">INSIGHT 2: Freight Amplification of Equivalent PCU</text>
+      <text x="12" y="38" fill="#334155" font-size="9.5">• At TP05 (Chintapally, NH-65), ADT is 13,248 veh/day, but PCU</text>
+      <text x="20" y="52" fill="#166534" font-size="9.5" font-weight="bold">surges to 24,611 PCU/day (+85.8% expansion above raw volume).</text>
+      <text x="12" y="70" fill="#334155" font-size="9.5">• Driven by 40.73% Heavy Vehicles (MAVs and 3-axle haulers)</text>
+      <text x="20" y="84" fill="#166534" font-size="9.5">possessing Indo-HCM equivalency factors ranging from 2.5 to 4.5.</text>
+      <text x="12" y="104" fill="#475569" font-size="9">Demonstrates why physical vehicle count grossly underestimates toll capacity needs.</text>
+    </g>
+
+    <!-- Key Insights Box 3 -->
+    <g transform="translate(10, 630)">
+      <rect x="0" y="0" width="395" height="135" rx="6" fill="#fdf4ff" stroke="#f5d0fe" stroke-width="1.2"/>
+      <text x="12" y="20" fill="#86198f" font-size="11" font-weight="bold">INSIGHT 3: Corridor Operating Function Classification</text>
+      <text x="12" y="38" fill="#334155" font-size="9.5">• Coastal / Interurban (NH-16, NH-75): Higher private car shares,</text>
+      <text x="20" y="52" fill="#334155" font-size="9.5">pronounced seasonal peaks, responsive to peak toll pricing.</text>
+      <text x="12" y="70" fill="#334155" font-size="9.5">• Industrial Freight Spines (NH-44, NH-65, NH-163): High multi-axle</text>
+      <text x="20" y="84" fill="#334155" font-size="9.5">volumes, sustained nocturnal flows, high pavement damage factors.</text>
+      <text x="12" y="102" fill="#86198f" font-size="9" font-weight="bold">LOOCV ensures model validation across both distinct regimes without leakage.</text>
+    </g>
+  </g>
+</svg>

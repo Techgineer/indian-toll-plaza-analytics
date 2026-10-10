@@ -1,0 +1,216 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 820" width="100%" height="100%" style="background:#ffffff; font-family:'Segoe UI', Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2c59"/>
+      <stop offset="100%" stop-color="#1f4e79"/>
+    </linearGradient>
+    <linearGradient id="mod1Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1b365d"/>
+      <stop offset="100%" stop-color="#2b5b84"/>
+    </linearGradient>
+    <linearGradient id="mod2Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#105652"/>
+      <stop offset="100%" stop-color="#1e7e78"/>
+    </linearGradient>
+    <linearGradient id="mod3Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <linearGradient id="mod4Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#b45309"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="mod5Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#14b8a6"/>
+    </linearGradient>
+    <linearGradient id="mod6Grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-3%" y="-3%" width="106%" height="108%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.12"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1f4e79"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#b45309"/>
+    </marker>
+  </defs>
+
+  <!-- Title Banner -->
+  <rect x="25" y="20" width="1050" height="60" rx="8" fill="url(#headerGrad)" filter="url(#cardShadow)"/>
+  <text x="550" y="45" text-anchor="middle" fill="#ffffff" font-size="16" font-weight="bold" letter-spacing="0.5">
+    INTEGRATED METHODOLOGY &amp; MACHINE LEARNING ARCHITECTURE WORKFLOW
+  </text>
+  <text x="550" y="65" text-anchor="middle" fill="#d9e2ec" font-size="12">
+    Macroscopic Peaking &amp; Passenger Car Equivalency Modeling across 8 Indian National Highway Toll Plazas
+  </text>
+
+  <!-- Stage 1: Field Data Acquisition -->
+  <g transform="translate(30, 100)">
+    <rect x="0" y="0" width="320" height="200" rx="8" fill="#ffffff" stroke="#c8d1dc" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="320" height="34" rx="8" fill="url(#mod1Grad)"/>
+    <rect x="0" y="26" width="320" height="8" fill="url(#mod1Grad)"/>
+    <text x="12" y="22" fill="#ffffff" font-size="12.5" font-weight="bold">STAGE 1: Continuous Field Acquisition</text>
+    <circle cx="300" cy="17" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <text x="300" y="21" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">1</text>
+    
+    <text x="14" y="55" fill="#0f2c59" font-size="11" font-weight="bold">• 8 National Highway Toll Plazas:</text>
+    <text x="24" y="72" fill="#475569" font-size="10">NH-75 (TP01, TP02), NH-16 (TP03), NH-65 (TP05),</text>
+    <text x="24" y="87" fill="#475569" font-size="10">NH-163/44 (TP06), NH-44 (TP08), Regional (TP04, TP07)</text>
+    <text x="14" y="108" fill="#0f2c59" font-size="11" font-weight="bold">• Continuous 7-Day Audit (168 hrs/plaza):</text>
+    <text x="24" y="125" fill="#475569" font-size="10">Automated ATCC pneumatic &amp; piezo sensors</text>
+    <text x="24" y="140" fill="#475569" font-size="10">1,344 aggregate continuous observation hours</text>
+    <text x="14" y="161" fill="#0f2c59" font-size="11" font-weight="bold">• Class Breakdown (8 Standard Categories):</text>
+    <text x="24" y="178" fill="#475569" font-size="10">Cars, Buses, LCVs, 2-Axle, 3-Axle, MAV, Mini-trucks</text>
+  </g>
+
+  <!-- Arrow 1 -> 2 -->
+  <line x1="350" y1="200" x2="390" y2="200" stroke="#1f4e79" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 2: Data Preprocessing & Equivalency -->
+  <g transform="translate(395, 100)">
+    <rect x="0" y="0" width="320" height="200" rx="8" fill="#ffffff" stroke="#c8d1dc" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="320" height="34" rx="8" fill="url(#mod2Grad)"/>
+    <rect x="0" y="26" width="320" height="8" fill="url(#mod2Grad)"/>
+    <text x="12" y="22" fill="#ffffff" font-size="12.5" font-weight="bold">STAGE 2: Preprocessing &amp; PCU Mapping</text>
+    <circle cx="300" cy="17" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <text x="300" y="21" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">2</text>
+    
+    <text x="14" y="55" fill="#105652" font-size="11" font-weight="bold">• Indo-HCM Equivalency Harmonization:</text>
+    <text x="24" y="72" fill="#475569" font-size="10">Conversion of mixed stream into total PCU/day</text>
+    <text x="24" y="87" fill="#475569" font-size="10">PCU = &sum; (N_j &times; E_j) [Cars=1.0, Bus=2.5, MAV=4.5]</text>
+    <text x="14" y="108" fill="#105652" font-size="11" font-weight="bold">• Temporal Flow Parameter Derivation:</text>
+    <text x="24" y="125" fill="#475569" font-size="10">ADT, PHV, PHF, K-Factor (PHV/ADT &times; 100), D-Factor</text>
+    <text x="14" y="146" fill="#105652" font-size="11" font-weight="bold">• Multicollinearity &amp; Variance Screening:</text>
+    <text x="24" y="163" fill="#475569" font-size="10">Zero-variance filter, Pearson correlation matrix,</text>
+    <text x="24" y="178" fill="#475569" font-size="10">VIF inspection to prevent co-linear explosion</text>
+  </g>
+
+  <!-- Arrow 2 -> 3 -->
+  <line x1="715" y1="200" x2="755" y2="200" stroke="#1f4e79" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 3: Domain Feature Engineering -->
+  <g transform="translate(760, 100)">
+    <rect x="0" y="0" width="310" height="200" rx="8" fill="#ffffff" stroke="#c8d1dc" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="310" height="34" rx="8" fill="url(#mod3Grad)"/>
+    <rect x="0" y="26" width="310" height="8" fill="url(#mod3Grad)"/>
+    <text x="12" y="22" fill="#ffffff" font-size="12.5" font-weight="bold">STAGE 3: Domain Basis Transformations</text>
+    <circle cx="290" cy="17" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <text x="290" y="21" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">3</text>
+    
+    <text x="14" y="55" fill="#7c3aed" font-size="11" font-weight="bold">• &phi;1: Exp Freight Attenuation:</text>
+    <text x="24" y="72" fill="#475569" font-size="10">&phi;1 = exp( - HV% / 5.0 )</text>
+    <text x="14" y="93" fill="#7c3aed" font-size="11" font-weight="bold">• &phi;2: Inverse Freight Concentration:</text>
+    <text x="24" y="110" fill="#475569" font-size="10">&phi;2 = 10.0 / max( HV%, 0.1 )</text>
+    <text x="14" y="131" fill="#7c3aed" font-size="11" font-weight="bold">• &phi;3: Logarithmic Demand Scale:</text>
+    <text x="24" y="148" fill="#475569" font-size="10">&phi;3 = ln( max( ADT, 1.0 ) ) / 10.0</text>
+    <text x="14" y="169" fill="#7c3aed" font-size="11" font-weight="bold">• &phi;4: Cross-Product Interaction:</text>
+    <text x="24" y="186" fill="#475569" font-size="10">&phi;4 = &phi;1 &times; &phi;3 [Scale-Freight Joint Dampening]</text>
+  </g>
+
+  <!-- Vertical Connecting Pipe -->
+  <path d="M 915 300 L 915 340 L 550 340 L 550 365" fill="none" stroke="#1f4e79" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 4: Multi-Model Architecture Calibration -->
+  <g transform="translate(30, 375)">
+    <rect x="0" y="0" width="1040" height="210" rx="8" fill="#ffffff" stroke="#c8d1dc" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="1040" height="34" rx="8" fill="url(#mod4Grad)"/>
+    <rect x="0" y="26" width="1040" height="8" fill="url(#mod4Grad)"/>
+    <text x="14" y="22" fill="#ffffff" font-size="13" font-weight="bold">STAGE 4: Multi-Model Architecture Implementation &amp; Calibration</text>
+    <circle cx="1020" cy="17" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <text x="1020" y="21" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">4</text>
+
+    <!-- 5 Model Pillars -->
+    <!-- Model 1 -->
+    <rect x="15" y="46" width="190" height="150" rx="6" fill="#fffbeb" stroke="#fcd34d" stroke-width="1"/>
+    <text x="110" y="66" text-anchor="middle" fill="#92400e" font-size="11.5" font-weight="bold">1. Multiple Linear (MLR)</text>
+    <text x="24" y="86" fill="#475569" font-size="9.5">• Closed-form OLS &amp; Ridge</text>
+    <text x="24" y="102" fill="#475569" font-size="9.5">• Y = &beta;0 + &sum;&beta;j Xj + &epsilon;</text>
+    <text x="24" y="118" fill="#475569" font-size="9.5">• Full coefficient visibility</text>
+    <text x="24" y="134" fill="#475569" font-size="9.5">• Baseline parametric benchmark</text>
+    <rect x="25" y="145" width="170" height="22" rx="4" fill="#fef3c7"/>
+    <text x="110" y="160" text-anchor="middle" fill="#92400e" font-size="9" font-weight="bold">K R²=0.8041 | PCU R²=0.9344</text>
+
+    <!-- Model 2 -->
+    <rect x="220" y="46" width="190" height="150" rx="6" fill="#ecfdf5" stroke="#a7f3d0" stroke-width="1"/>
+    <text x="315" y="66" text-anchor="middle" fill="#065f46" font-size="11.5" font-weight="bold">2. Power Regression (PR)</text>
+    <text x="229" y="86" fill="#475569" font-size="9.5">• Multiplicative elasticity law</text>
+    <text x="229" y="102" fill="#475569" font-size="9.5">• ln(Y) = ln(&alpha;) + &sum;&beta;j ln(Xj)</text>
+    <text x="229" y="118" fill="#475569" font-size="9.5">• Natural physical fit for PCU</text>
+    <text x="229" y="134" fill="#475569" font-size="9.5">• Non-negative bounds guarantee</text>
+    <rect x="230" y="145" width="170" height="22" rx="4" fill="#d1fae5"/>
+    <text x="315" y="160" text-anchor="middle" fill="#065f46" font-size="9" font-weight="bold">K R²=0.8361 | PCU R²=0.9995*</text>
+
+    <!-- Model 3 -->
+    <rect x="425" y="46" width="190" height="150" rx="6" fill="#eff6ff" stroke="#bfdbfe" stroke-width="1"/>
+    <text x="520" y="66" text-anchor="middle" fill="#1e40af" font-size="11.5" font-weight="bold">3. Random Forest (RF)</text>
+    <text x="434" y="86" fill="#475569" font-size="9.5">• Decorrelated tree ensemble</text>
+    <text x="434" y="102" fill="#475569" font-size="9.5">• Variance reduction splitting</text>
+    <text x="434" y="118" fill="#475569" font-size="9.5">• Blended linear scaffold</text>
+    <text x="434" y="134" fill="#475569" font-size="9.5">• Resilient to local noise</text>
+    <rect x="435" y="145" width="170" height="22" rx="4" fill="#dbeafe"/>
+    <text x="520" y="160" text-anchor="middle" fill="#1e40af" font-size="9" font-weight="bold">K R²=0.8109 | PCU R²=0.9316</text>
+
+    <!-- Model 4 -->
+    <rect x="630" y="46" width="190" height="150" rx="6" fill="#fdf4ff" stroke="#f5d0fe" stroke-width="1"/>
+    <text x="725" y="66" text-anchor="middle" fill="#86198f" font-size="11.5" font-weight="bold">4. XGBoost Ensemble (XGB)</text>
+    <text x="639" y="86" fill="#475569" font-size="9.5">• Regularized gradient boosting</text>
+    <text x="639" y="102" fill="#475569" font-size="9.5">• L1/L2 leaf weight penalties</text>
+    <text x="639" y="118" fill="#475569" font-size="9.5">• Captures steep K-thresholds</text>
+    <text x="639" y="134" fill="#475569" font-size="9.5">• Highest accuracy for K-factor</text>
+    <rect x="640" y="145" width="170" height="22" rx="4" fill="#fae8ff"/>
+    <text x="725" y="160" text-anchor="middle" fill="#86198f" font-size="9" font-weight="bold">K R²=0.8808* | PCU R²=0.9604</text>
+
+    <!-- Model 5 -->
+    <rect x="835" y="46" width="190" height="150" rx="6" fill="#fef2f2" stroke="#fecaca" stroke-width="1"/>
+    <text x="930" y="66" text-anchor="middle" fill="#991b1b" font-size="11.5" font-weight="bold">5. Neural Net (MLP)</text>
+    <text x="844" y="86" fill="#475569" font-size="9.5">• Feedforward [2–16–8–1]</text>
+    <text x="844" y="102" fill="#475569" font-size="9.5">• ReLU hidden + Adam solver</text>
+    <text x="844" y="118" fill="#475569" font-size="9.5">• High parameter capacity</text>
+    <text x="844" y="134" fill="#475569" font-size="9.5">• High N=8 generalization risk</text>
+    <rect x="845" y="145" width="170" height="22" rx="4" fill="#fee2e2"/>
+    <text x="930" y="160" text-anchor="middle" fill="#991b1b" font-size="9" font-weight="bold">K R²=0.8101 | PCU R²=0.8713</text>
+  </g>
+
+  <!-- Arrow 4 -> 5 & 6 -->
+  <line x1="550" y1="585" x2="550" y2="615" stroke="#1f4e79" stroke-width="2.5" marker-end="url(#arrow)"/>
+
+  <!-- Stage 5: LOOCV Protocol -->
+  <g transform="translate(30, 625)">
+    <rect x="0" y="0" width="505" height="175" rx="8" fill="#ffffff" stroke="#c8d1dc" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="505" height="34" rx="8" fill="url(#mod5Grad)"/>
+    <rect x="0" y="26" width="505" height="8" fill="url(#mod5Grad)"/>
+    <text x="14" y="22" fill="#ffffff" font-size="12.5" font-weight="bold">STAGE 5: Leave-One-Out Cross-Validation (LOOCV)</text>
+    <circle cx="485" cy="17" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <text x="485" y="21" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">5</text>
+
+    <text x="14" y="55" fill="#0f766e" font-size="11" font-weight="bold">• Exhaustive 8-Fold Cross-Validation Protocol:</text>
+    <text x="24" y="72" fill="#475569" font-size="10">Iterate i = 1..8: Train on 7 toll facilities (87.5%), test strictly on held-out facility i</text>
+    <text x="24" y="87" fill="#475569" font-size="10">Eliminates train-test data leakage and optimistic small-sample evaluation bias</text>
+    <text x="14" y="108" fill="#0f766e" font-size="11" font-weight="bold">• 7 Complementary Statistical Performance Metrics:</text>
+    <text x="24" y="125" fill="#475569" font-size="10">MAE (Eq 26), MSE (Eq 27), RMSE (Eq 28), MAPE (Eq 29)</text>
+    <text x="24" y="140" fill="#475569" font-size="10">NRMSE (Eq 30), Mean Bias Error MBE (Eq 31), Coefficient of Determination R² (Eq 32)</text>
+    <text x="14" y="161" fill="#0f766e" font-size="10" font-style="italic">Unbiased generalization assessment across all 8 National Highway operational regimes</text>
+  </g>
+
+  <!-- Stage 6: Transportation Insights & Specifications -->
+  <g transform="translate(565, 625)">
+    <rect x="0" y="0" width="505" height="175" rx="8" fill="#ffffff" stroke="#c8d1dc" stroke-width="1.5" filter="url(#cardShadow)"/>
+    <rect x="0" y="0" width="505" height="34" rx="8" fill="url(#mod6Grad)"/>
+    <rect x="0" y="26" width="505" height="8" fill="url(#mod6Grad)"/>
+    <text x="14" y="22" fill="#ffffff" font-size="12.5" font-weight="bold">STAGE 6: Transportation Engineering Insights</text>
+    <circle cx="485" cy="17" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <text x="485" y="21" fill="#ffffff" font-size="10.5" font-weight="bold" text-anchor="middle">6</text>
+
+    <text x="14" y="55" fill="#1e3a8a" font-size="11" font-weight="bold">• K-Factor Decay Law (Peak Spreading):</text>
+    <text x="24" y="72" fill="#475569" font-size="10">K decays nonlinearly from 8.68% (commuter) to ~6.54% (heavy 24-hr freight)</text>
+    <text x="24" y="87" fill="#475569" font-size="10">XGBoost leads (R²=0.8808, MAPE=2.37%) by capturing localized freight splits</text>
+    <text x="14" y="108" fill="#1e3a8a" font-size="11" font-weight="bold">• Multiplicative Equivalence Physics for PCU:</text>
+    <text x="24" y="125" fill="#475569" font-size="10">Power Regression dominates (R²=0.9995, MAPE=1.59%) due to physical scaling</text>
+    <text x="14" y="146" fill="#1e3a8a" font-size="11" font-weight="bold">• Neural Network Small-Sample Vulnerability:</text>
+    <text x="24" y="163" fill="#475569" font-size="10">MLP overfits on N=8 (PCU RMSE=5328.63); requires physics-informed inductive bias</text>
+  </g>
+</svg>
